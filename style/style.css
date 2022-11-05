@@ -37,6 +37,9 @@ nav#menu > a{
 body{
     margin: 0px;
     background-color: black;
+    background-image: url("/img/fundo.jpg");
+    background-position: left center;
+    background-attachment: fixed;
 }
 
 div#resumo{
