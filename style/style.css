@@ -18,6 +18,10 @@ img#perfil{
     height: 50%;
 }
 
+img.box-filme{
+    border-radius: 15px 15px 10px 10px;
+}
+
 nav#menu > a{
     background-color: black;
     color: white;
@@ -78,7 +82,7 @@ article > h1{
     border-radius: 10px 10px 0px 0px;
     margin: 0px 0px 30px 0px;
     padding: 25px 0px 25px 0px;
-    color: #6045b9;
+    color: black;
     text-align: center;
     text-shadow: 3px 3px 4px #1a133349;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
