@@ -1,8 +1,11 @@
+:root{
+    --margin-main: 35px;
+}
+
 header{
     background-color:white;
     padding: 10px 50px 15px 40px;
     border-radius: 0px 0px 50px 50px;
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,15 +41,15 @@ body{
     margin: 0px;
     background-color: black;
     background-image: url("/img/fundo.jpg");
-    background-position: left center;
+    background-position: center;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 div#resumo{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
-    margin: auto;
-    padding: 50px 60px 0px 60px;
+    padding: 50px 60px 30px 60px;
 }
 
 div#test{
@@ -55,14 +58,14 @@ div#test{
 
 main{
     display: flex;
-    margin: 70px 0px 0px 70px;
+    margin: var(--margin-main) 0px 0px 70px;
 }
 
 article{
     background-color: white;
     border-radius: 120px 0px 120px 0px;
     padding: -50px 0px 30px 0px;
-    margin-bottom: 65px;
+    margin-bottom: var(--margin-main);
 }
 
 article > h1{
@@ -74,21 +77,18 @@ article > h1{
 
 .carrosel-projetos{
     padding: 1px 1px 1px 1px;
-    background-color: rgb(245, 245, 245);
-    padding-bottom: 10px;
-    margin: 0px 8px 0px 8px;
+    background-color: #e2eaef;
+    padding: 0px 30px 10px;
+    margin: 0px 8px;
     border-radius: 15px 15px 10px 10px;
     
 }
 .carrosel-projetos > h1{
     background-color: #e8e7f39a;
-    border-radius: 10px 10px 0px 0px;
     margin: 0px 0px 30px 0px;
-    padding: 25px 0px 25px 0px;
+    padding: 30px 0px 0px;
     color: black;
     text-align: center;
-    text-shadow: 3px 3px 4px #1a133349;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
     font-size: 2em;
 }
