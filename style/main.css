@@ -1,0 +1,135 @@
+:root{
+    --margin-main: 35px;
+    --color-h1: #201087;
+    --color-cinza: #e2eaef;
+}
+
+@font-face {
+    font-family: Write-font;
+    src: url('/fonts/write.otf') format('OpenType');
+}
+
+@font-face {
+    font-family: Hagaum;
+    src: url('/fonts/gabo-titulo.otf') format('OpenType');
+}
+
+h1{
+    font-family: Hagaum, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    word-spacing: 0.1em;
+    letter-spacing: 0.05em;
+}
+
+header{
+    background-color: #ebf0f3;
+    padding: 8px 50px 8px 40px;
+    border-radius: 0px 0px 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > img{
+    width: 15em;
+}
+
+img.box-filme{
+    border-radius: 15px 15px 10px 10px;
+}
+
+body{
+    margin: 0px;
+    background-color: black;
+    background-image: url("/img/fundo.jpg");
+    background-position: left center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#resumo{
+    font-family: Write-font, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6em;
+    word-spacing: 0.2em;
+    color: black;
+    padding: 0px 60px 30px;
+}
+
+#resumo > p{
+    margin: 5px auto;
+    text-indent: 30px;
+}
+
+article{
+    background-color: var(--color-cinza);
+    border-radius: 120px 3px;
+    margin: auto;
+}
+
+article > h1{
+    text-align: center;
+    color: var(--color-h1);
+    margin: 20px 0px;
+}
+
+#alignsobremim{
+    display: flex;
+    margin: 40px 20px 40px 40px;
+    align-items: center;
+}
+
+#alignsobremim > img{
+    padding: 40px 20px;
+    height: 400px;
+}
+
+.carrosel-projetos{
+    padding: 1px 1px 1px 1px;
+    background-color: var(--color-cinza);
+    padding: 0px 30px 10px;
+    margin: 0px 20px;
+    border-radius: 15px 15px 10px 10px;
+    
+}
+.carrosel-projetos > h1{
+    margin: 0px 0px 30px;
+    padding: 30px 0px 0px;
+    color: var(--color-h1);
+    text-align: center;
+}
+
+.btn {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 1em;
+    color: #e74c3c;
+    cursor: pointer;
+    align-self: center;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1;
+    margin: 5px 8px;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.btn:hover, .btn:focus {
+    color: rgba(104, 5, 5, 0.596);
+    outline: 0;
+}
+
+.effect {
+    border-color: #faaf28;
+    color: #f2f5f7;
+    box-shadow: 0 0 40px 40px #faaf28 inset, 0 0 0 0 #faaf28;
+    transition: all 150ms ease-in-out;
+}
+
+.effect:hover {
+    box-shadow: 0 0 10px 0 #faaf28 inset, 0 0 10px 1px #faaf28;
+}
+
