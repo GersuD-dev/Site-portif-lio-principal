@@ -14,6 +14,22 @@
     src: url('/fonts/gabo-titulo.otf') format('OpenType');
 }
 
+@font-face {
+    font-family: Bofont;
+    src: url('/fonts/Archive-Regular.otf') format('OpenType');
+}
+
+
+body{
+    margin: 0%;
+    padding-top: 5%;
+    background-color: black;
+    background-image: url("/img/fundo.jpg");
+    background-position: left center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 h1{
     font-family: Hagaum, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.5em;
@@ -22,29 +38,24 @@ h1{
 }
 
 header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    width: 100%;
     background-color: #ebf0f3;
     padding: 8px 50px 8px 40px;
-    border-radius: 0px 0px 50px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
+
+
 header > img{
-    width: 15em;
+    width: 12em;
 }
 
 img.box-filme{
     border-radius: 15px 15px 10px 10px;
-}
-
-body{
-    margin: 0px;
-    background-color: black;
-    background-image: url("/img/fundo.jpg");
-    background-position: left center;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 #resumo{
@@ -95,6 +106,8 @@ article > h1{
     margin: 0px 0px 30px;
     padding: 30px 0px 0px;
     color: var(--color-h1);
+    font-family: Bofont;
+    letter-spacing: -0.05em;
     text-align: center;
 }
 
@@ -110,11 +123,11 @@ article > h1{
     font-weight: 400;
     line-height: 1;
     margin: 5px 8px;
-    padding: 1em;
+    padding: 0.5em;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-family: Bofont,'Montserrat', sans-serif;
+    font-size: 1.2em;
 }
 
 .btn:hover, .btn:focus {
@@ -124,7 +137,7 @@ article > h1{
 
 .effect {
     border-color: #faaf28;
-    color: #f2f5f7;
+    color: rgb(255, 255, 255);
     box-shadow: 0 0 40px 40px #faaf28 inset, 0 0 0 0 #faaf28;
     transition: all 150ms ease-in-out;
 }
@@ -133,3 +146,21 @@ article > h1{
     box-shadow: 0 0 10px 0 #faaf28 inset, 0 0 10px 1px #faaf28;
 }
 
+
+#modoescuro{
+    appearance: none;
+    display: flex;
+    border: 0;
+    border-color: white;
+    cursor: pointer;
+    background-color: white; 
+    border-radius: 0px 50px 50px 0px;
+    position: fixed;
+    top: 50%;
+}
+
+button > img{
+    height: 23px;
+    width: 20px;
+    padding: 5px 4px 5px 0px;
+}
