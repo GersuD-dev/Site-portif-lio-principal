@@ -1,177 +1,173 @@
-:root{
-    --margin-main: 35px;
-    --color-h1: #201087;
-    --color-cinza: #e2eaef;
+:root {
+  --margin-main: 35px;
+  --color-h1: #201087;
+  --color-cinza: #e2eaef;
 }
 
 @font-face {
-    font-family: Write-font;
-    src: url('../fonts/write.otf') format('OpenType');
+  font-family: Write-font;
+  src: url("../fonts/write.otf") format("OpenType");
 }
 
 @font-face {
-    font-family: Hagaum;
-    src: url('../fonts/gabo-titulo.otf') format('OpenType');
+  font-family: Hagaum;
+  src: url("../fonts/gabo-titulo.otf") format("OpenType");
 }
 
 @font-face {
-    font-family: Bofont;
-    src: url('../fonts/Archive-Regular.otf') format('OpenType');
+  font-family: Bofont;
+  src: url("../fonts/Archive-Regular.otf") format("OpenType");
 }
 
-
-body{
-    margin: 0%;
-    padding-top: 5%;
-    background-color: black;
-    background-image: url("../img/fundo.jpg");
-    background-position: left center;
-    background-attachment: fixed;
-    background-size: cover;
+body {
+  margin: 0%;
+  padding-top: 5%;
+  background-color: black;
+  background-image: url("../img/fundo.jpg");
+  background-position: left center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-h1{
-    font-family: Hagaum, Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.5em;
-    word-spacing: 0.1em;
-    letter-spacing: 0.05em;
+h1 {
+  font-family: Hagaum, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5em;
+  word-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 
-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    top: 0%;
-    width: 100%;
-    background-color: #ebf0f3;
-    padding: 8px 50px 8px 40px;
-    z-index: 2;
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  background-color: #ebf0f3;
+  padding: 8px 50px 8px 40px;
+  z-index: 2;
 }
 
-
-
-header > img{
-    width: 12em;
+header > img {
+  width: 12em;
 }
 
-img.box-filme{
-    border-radius: 15px 15px 10px 10px;
+img.box-filme {
+  border-radius: 15px 15px 10px 10px;
 }
 
-#resumo{
-    font-family: Write-font, Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.6em;
-    word-spacing: 0.2em;
-    color: black;
-    padding: 0px 60px 30px;
+#resumo {
+  font-family: Write-font, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6em;
+  word-spacing: 0.2em;
+  color: black;
+  padding: 0px 60px 30px;
 }
 
-#resumo > p{
-    margin: 5px auto;
-    text-indent: 30px;
+#resumo > p {
+  margin: 5px auto;
+  text-indent: 30px;
 }
 
-article{
-    background-color: var(--color-cinza);
-    border-radius: 120px 3px;
-    margin: auto;
+article {
+  background-color: var(--color-cinza);
+  border-radius: 120px 3px;
+  margin: auto;
 }
 
-article > h1{
-    text-align: center;
-    color: var(--color-h1);
-    margin: 20px 0px;
+article > h1 {
+  text-align: center;
+  color: var(--color-h1);
+  margin: 20px 0px;
 }
 
-#alignsobremim{
-    display: flex;
-    margin: 40px 20px 40px 40px;
-    align-items: center;
+#alignsobremim {
+  display: flex;
+  margin: 40px 20px 40px 40px;
+  align-items: center;
 }
 
-#alignsobremim > img{
-    padding: 40px 20px;
-    height: 400px;
+#alignsobremim > img {
+  padding: 40px 20px;
+  height: 400px;
 }
 
-.carrosel-projetos{
-    padding: 1px 1px 1px 1px;
-    background-color: var(--color-cinza);
-    padding: 0px 30px 10px;
-    margin: 0px 20px;
-    border-radius: 15px 15px 10px 10px;
-    
+.carrosel-projetos {
+  padding: 1px 1px 1px 1px;
+  background-color: var(--color-cinza);
+  padding: 0px 30px 10px;
+  margin: 0px 20px;
+  border-radius: 15px 15px 10px 10px;
 }
-.carrosel-projetos > h1{
-    margin: 0px 0px 30px;
-    padding: 30px 0px 0px;
-    color: var(--color-h1);
-    font-family: Bofont;
-    letter-spacing: -0.05em;
-    text-align: center;
+.carrosel-projetos > h1 {
+  margin: 0px 0px 30px;
+  padding: 30px 0px 0px;
+  color: var(--color-h1);
+  font-family: Bofont;
+  letter-spacing: -0.05em;
+  text-align: center;
 }
 
 .btn {
-    appearance: none;
-    background-color: transparent;
-    border: 2px solid #e74c3c;
-    border-radius: 1em;
-    color: #e74c3c;
-    cursor: pointer;
-    align-self: center;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1;
-    margin: 5px 8px;
-    padding: 0.5em;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: Bofont,'Montserrat', sans-serif;
-    font-size: 1.2em;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 1em;
+  color: #e74c3c;
+  cursor: pointer;
+  align-self: center;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1;
+  margin: 5px 8px;
+  padding: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Bofont, "Montserrat", sans-serif;
+  font-size: 1.2em;
 }
 
-.btn:hover, .btn:focus {
-    color: rgba(104, 5, 5, 0.596);
-    outline: 0;
+.btn:hover,
+.btn:focus {
+  color: rgba(104, 5, 5, 0.596);
+  outline: 0;
 }
 
 .effect {
-    border-color: #faaf28;
-    color: rgb(255, 255, 255);
-    box-shadow: 0 0 40px 40px #faaf28 inset, 0 0 0 0 #faaf28;
-    transition: all 150ms ease-in-out;
+  border-color: #faaf28;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 40px 40px #faaf28 inset, 0 0 0 0 #faaf28;
+  transition: all 150ms ease-in-out;
 }
 
 .effect:hover {
-    box-shadow: 0 0 10px 0 #faaf28 inset, 0 0 10px 1px #faaf28;
+  box-shadow: 0 0 10px 0 #faaf28 inset, 0 0 10px 1px #faaf28;
 }
 
-
-#modoescuro{
-    appearance: none;
-    display: flex;
-    border: 0;
-    border-color: white;
-    cursor: pointer;
-    background-color: white; 
-    border-radius: 0px 50px 50px 0px;
-    position: fixed;
-    top: 50%;
+#modoescuro {
+  appearance: none;
+  display: flex;
+  border: 0;
+  border-color: white;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 0px 50px 50px 0px;
+  position: fixed;
+  top: 50%;
 }
 
-button > img{
-    height: 23px;
-    width: 20px;
-    padding: 5px 4px 5px 0px;
+button > img {
+  height: 23px;
+  width: 20px;
+  padding: 5px 4px 5px 0px;
 }
 
-footer{
-    background-color: #201087;
-    color: whitesmoke;
-    text-align: center;
-    font-family: Bofont, Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    padding: 10px;
-    margin-bottom: 5px;
+footer {
+  background-color: #201087;
+  color: whitesmoke;
+  text-align: center;
+  font-family: Bofont, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 5px;
 }
