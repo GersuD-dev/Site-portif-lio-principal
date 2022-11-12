@@ -18,8 +18,8 @@
     <title>Portifólio</title>
   </head>
   <body>
-    <header>
-      <img src="img/logo.png" alt="logotipo" />
+    <header id = 'navegacao'>
+      <img id = 'imglogo' src="img/logo-sunny.png" alt="logotipo" />
 
       <nav id="menu">
         <button class="btn effect">SOBRE MIM</button>
@@ -30,8 +30,8 @@
 
     <main>
       <div id="alignsobremim">
-        <article>
-          <h1>SOBRE MIM</h1>
+        <article id = 'background-color-article'>
+          <h1 class = "hagaum">SOBRE MIM</h1>
           <div id="resumo">
             <p>
               Me chamo Gerson, tenho 22 anos e meu último cargo, no regime CLT,
@@ -68,8 +68,8 @@
         <img id="perfil" src="img/foto-perfil.png" alt="logo de perfil" />
       </div>
 
-      <div class="carrosel-projetos">
-        <h1>MEUS PROJETOS</h1>
+      <div id="carrosel-projetos">
+        <h1 class = "hagaum">MEUS PROJETOS</h1>
         <div class="owl-carousel owl-theme">
           <div class="item">
             <a
@@ -90,7 +90,9 @@
               target="_blank"
               hreflang="pt-br"
             >
-              <img class="box-filme" src="img/mini3.jpg" alt="" srcset="" />
+              <img class="box-filme" 
+                src="img/mini3.jpg" 
+                alt="clone netflix" />
             </a>
           </div>
           <div class="item">
@@ -99,35 +101,55 @@
               target="_blank"
               hreflang="pt-br"
             >
-              <img class="box-filme" src="img/mini4.jpg" alt="" srcset="" />
+              <img
+                class="box-filme"
+                src="img/mini4.jpg"
+                alt="clone uol bate-papo"
+              />
             </a>
           </div>
           <div class="item">
             <a href="#" target="_blank" hreflang="pt-br">
-              <img class="box-filme" src="img/mini5.jpg" alt="" srcset="" />
+              <img
+                class="box-filme"
+                src="img/mini5.jpg"
+                alt="hackathon cansat"
+              />
             </a>
           </div>
           <div class="item">
             <a href="#" target="_blank" hreflang="pt-br">
-              <img class="box-filme" src="img/mini6.jpg" alt="" srcset="" />
+              <img class="box-filme" 
+                src="img/mini6.jpg" 
+                alt="site parallax" 
+              />
             </a>
           </div>
           <div class="item">
             <a href="#" target="_blank" hreflang="pt-br">
-              <img class="box-filme" src="img/mini7.jpg" alt="" srcset="" />
+              <img
+                class="box-filme"
+                src="img/mini7.jpg"
+                alt="site com dashboard"
+              />
             </a>
           </div>
           <div class="item">
             <a href="#" target="_blank" hreflang="pt-br">
-              <img class="box-filme" src="img/mini8.jpg" alt="" srcset="" />
+              <img class="box-filme" 
+                src="img/mini8.jpg" 
+                alt="pokedex" 
+              />
             </a>
           </div>
         </div>
       </div>
     </main>
 
-    <button id="modoescuro">
-      <img src="img/night.png" alt="modo escuro" />
+    <button id="modoescuro" onclick="ativarnoturno()">
+      <img id='imgmodoescuro' src="img/night.png" 
+      alt="modo escuro" 
+      />
     </button>
 
     <div>
@@ -143,12 +165,14 @@
       <p style="color: white">.</p>
       <p style="color: white">.</p>
     </div>
-
-    <footer>Planejado e desenvolvido por Gerson Durães <br />Copyright ©</footer>
+    <footer id = 'rodape'>
+      Planejado e desenvolvido por Gerson Durães <br />Copyright ©
+    </footer>
 
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+    <script src="js/modonoturno.js"></script>
   </body>
 </html>

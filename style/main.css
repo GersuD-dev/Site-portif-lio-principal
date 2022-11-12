@@ -1,7 +1,24 @@
 :root {
   --margin-main: 35px;
-  --color-h1: #201087;
   --color-cinza: #e2eaef;
+
+  --color-h1-moony: #2c7374;
+  --color-h1-sunny: #201087;
+
+  --header-sunny: #ebf0f3;
+  --header-moony: #162238;
+
+  --article-sunny: var(--color-cinza);
+  --article-moony: #162238;
+
+ 
+  --button-nav-sunny: #faaf28;
+  --button-nav-moony: transparent;
+
+  --button-nav: ;
+
+  --footer-sunny:#201087;
+  --footer-moony: #162238;
 }
 
 @font-face {
@@ -31,6 +48,7 @@ body {
 
 h1 {
   font-family: Hagaum, Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--color-h1-sunny);
   font-size: 2.5em;
   word-spacing: 0.1em;
   letter-spacing: 0.05em;
@@ -43,7 +61,7 @@ header {
   position: fixed;
   top: 0%;
   width: 100%;
-  background-color: #ebf0f3;
+  background-color: var(--header-sunny);
   padding: 8px 50px 8px 40px;
   z-index: 2;
 }
@@ -70,14 +88,13 @@ img.box-filme {
 }
 
 article {
-  background-color: var(--color-cinza);
+  background-color: var(--article-sunny);
   border-radius: 120px 3px;
   margin: auto;
 }
 
 article > h1 {
   text-align: center;
-  color: var(--color-h1);
   margin: 20px 0px;
 }
 
@@ -92,17 +109,16 @@ article > h1 {
   height: 400px;
 }
 
-.carrosel-projetos {
+#carrosel-projetos {
   padding: 1px 1px 1px 1px;
-  background-color: var(--color-cinza);
+  background-color: var(--article-sunny);
   padding: 0px 30px 10px;
   margin: 0px 20px;
   border-radius: 15px 15px 10px 10px;
 }
-.carrosel-projetos > h1 {
+#carrosel-projetos > h1 {
   margin: 0px 0px 30px;
   padding: 30px 0px 0px;
-  color: var(--color-h1);
   font-family: Bofont;
   letter-spacing: -0.05em;
   text-align: center;
@@ -113,7 +129,6 @@ article > h1 {
   background-color: transparent;
   border: 2px solid #e74c3c;
   border-radius: 1em;
-  color: #e74c3c;
   cursor: pointer;
   align-self: center;
   font-size: 1em;
@@ -135,8 +150,8 @@ article > h1 {
 
 .effect {
   border-color: #faaf28;
-  color: rgb(255, 255, 255);
-  box-shadow: 0 0 40px 40px #faaf28 inset, 0 0 0 0 #faaf28;
+  color: whitesmoke;
+  box-shadow: 0 0 40px 40px var(--button-nav) inset, 0 0 0 0 #faaf28;
   transition: all 150ms ease-in-out;
 }
 
@@ -163,7 +178,7 @@ button > img {
 }
 
 footer {
-  background-color: #201087;
+  background-color: var(--footer-sunny);
   color: whitesmoke;
   text-align: center;
   font-family: Bofont, Verdana, Geneva, Tahoma, sans-serif;
