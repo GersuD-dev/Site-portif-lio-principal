@@ -41,7 +41,7 @@ body {
   padding-top: 5%;
   background-color: black;
   background-image: url("../img/fundo.jpg");
-  background-position: bottom;
+  background-position: center;
   background-attachment: fixed;
   background-size: cover;
 }
