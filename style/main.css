@@ -36,16 +36,12 @@
   src: url("../fonts/Archive-Regular.otf") format("OpenType");
 }
 
-html{
-  width: 100%;
-}
-
 body {
-  margin: 0%;
+  margin: 0% !important;
   padding-top: 5%;
   background-color: black;
   background-image: url("../img/fundo.jpg");
-  background-position: left center;
+  background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -198,4 +194,10 @@ footer {
   font-family: Bofont, Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   padding: 10px;
+}
+
+@media (max-width: 600px) {
+  #alignsobremim {
+    margin-top: 200px;
+  }
 }
