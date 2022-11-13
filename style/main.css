@@ -36,6 +36,10 @@
   src: url("../fonts/Archive-Regular.otf") format("OpenType");
 }
 
+html{
+  width: 100%;
+}
+
 body {
   margin: 0%;
   padding-top: 5%;
@@ -55,19 +59,23 @@ h1 {
 }
 
 header {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   position: fixed;
   top: 0%;
-  width: 100%;
   background-color: var(--header-sunny);
-  padding: 8px 50px 8px 40px;
+  padding: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
   z-index: 2;
 }
 
 header > img {
   width: 12em;
+  justify-content: right;
 }
 
 img.box-filme {
@@ -91,6 +99,7 @@ article {
   background-color: var(--article-sunny);
   border-radius: 120px 3px;
   margin: auto;
+  max-width: 80%;
 }
 
 article > h1 {
@@ -100,13 +109,16 @@ article > h1 {
 
 #alignsobremim {
   display: flex;
-  margin: 40px 20px 40px 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px 0px;
   align-items: center;
 }
 
 #alignsobremim > img {
-  padding: 40px 20px;
+  padding: auto;
   height: 400px;
+  margin: auto;
 }
 
 #carrosel-projetos {
