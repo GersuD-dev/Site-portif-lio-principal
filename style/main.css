@@ -155,7 +155,7 @@ article > h1 {
 }
 
 #background-vermais{
-  background: linear-gradient(180deg,hsla(0,0%,100%,0) 0,#fcfcfc 43%,white);
+  background: linear-gradient(180deg,hsla(0,0%,100%,0) 0,var(--button-sobre) 43%,var(--button-sobre));
   position: relative;
   bottom: 50px;
   padding-top: 70px;
