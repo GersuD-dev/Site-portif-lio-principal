@@ -2,6 +2,8 @@ var imgmodoescuro = document.getElementById('imgmodoescuro');
 
 var hagaum = document.querySelectorAll('h1');
 
+var botaosobre = document.getElementById('background-vermais')
+
 var navegacao = document.getElementById('navegacao');
 
 var logo = document.getElementById('imglogo');
@@ -41,7 +43,10 @@ function ativarnoturno(){
 
         document.body.style.setProperty('--button-nav', '(var)--button-nav-moony');
 
+        document.body.style.setProperty('--button-sobre', 'var(--header-moony)');
+
         rodape.style.backgroundColor = 'var(--footer-moony)';
+
     }else{
 
         imgmodoescuro.src = 'img/night.png';
@@ -62,6 +67,9 @@ function ativarnoturno(){
 
         document.body.style.setProperty('--button-nav', 'var(--button-nav-sunny)');
         
+        document.body.style.setProperty('--button-sobre', 'var(--header-sunny)');
+        
+
         rodape.style.backgroundColor = 'var(--footer-sunny)';
     }
     
