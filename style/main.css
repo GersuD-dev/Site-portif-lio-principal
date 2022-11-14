@@ -65,6 +65,10 @@ a {
   text-decoration: none;
 }
 
+a:hover{
+  color: var( --color-h1-sunny);
+}
+
 h1 {
   font-family: Hagaum, Verdana, Geneva, Tahoma, sans-serif;
   color: var(--color-h1-sunny);
@@ -213,8 +217,30 @@ footer {
   padding: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1110px) {
+  #align-sobremim {
+    margin: 0px;
+    margin-top: 100px;
+  }
+  
+  #background-color-article {
+    background-color: var(--article-sunny);
+    min-width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+    border-radius: 0px;
+  }
+
+}
+
+@media (max-width: 650px) {
   #align-sobremim {
     margin-top: 200px;
+  }
+}
+
+@media (max-width: 450px) {
+  #align-sobremim {
+    margin-top: 250px;
   }
 }
