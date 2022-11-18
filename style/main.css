@@ -250,6 +250,29 @@ button > img {
   padding: 5px 4px 5px 0px;
 }
 
+#backgroud-formulario{
+  width: 100% !important;
+  height: 300px;
+  margin: 20px 0px 0px !important;
+  background-color: var(--article-sunny);
+}
+
+#backgroud-formulario > h2{
+  font-family: Hagaum, Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--button-nav);
+  font-size: 2em;
+  word-spacing: 0.1em;
+  letter-spacing: 0.05em;
+  padding: 20px;
+  text-align: center;
+}
+
+#formulario{
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+}
+
 footer {
   background-color: var(--footer-sunny);
   color: whitesmoke;
