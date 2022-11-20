@@ -320,6 +320,10 @@ button > img {
   margin-bottom: 30px;
 }
 
+#redesociais > img{
+  border-radius: 15px 15px 10px 10px;
+}
+
 footer {
   background-color: var(--footer-sunny);
   color: whitesmoke;
