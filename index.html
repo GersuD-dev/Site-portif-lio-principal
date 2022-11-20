@@ -8,7 +8,7 @@
     <!--principal-->
     <link rel="stylesheet" href="style/main.css" />
 
-    <!--responsividade-->
+    <!--responsividade do carrousel-->
     <link rel="stylesheet" href="style/responsive.css" />
 
     <!--owl css-->
@@ -23,19 +23,25 @@
 
       <nav id="menu">
         <button class="btn effect">
-          <a href="#align-sobremim">SOBRE MIM</a>
+          <a href="#sobremim">SOBRE MIM</a>
+        </button>
+        <button class="btn effect">
+          <a href="#habilidades">HABILIDADES</a>
+        </button>
+        <button class="btn effect">
+          <a href="#experiencias">EXPERIÊNCIAS</a>
         </button>
         <button class="btn effect">
           <a href="#carrosel-projetos">PROJETOS</a>
         </button>
-        <button class="btn effect"><a href="#">HABILIDADES</a></button>
-        <button class="btn effect"><a href="#">EXPERIÊNCIAS</a></button>
-        <button class="btn effect"><a href="#">REDES SOCIAIS</a></button>
+        <button class="btn effect">
+          <a href="#redessocais">REDES SOCIAIS</a>
+        </button>
       </nav>
     </header>
 
     <main>
-      <div id="align-sobremim">
+      <section id="sobremim">
         <img id="perfil" src="img/foto-perfil.png" alt="logo de perfil" />
 
         <article id="background-color-article">
@@ -55,6 +61,7 @@
                 propor inovações para solucionar uma determinada
               </p>
             </div>
+
             <div id="background-vermais">
               <button id="botao-vermais" onclick="vermais()">
                 <div id="textovermais">Veja mais</div>
@@ -100,9 +107,110 @@
             </noscript>
           </div>
         </article>
-      </div>
+      </section>
 
-      <div id="carrosel-projetos">
+      <section id="habilidades">
+        <h1>Habilidades</h1>
+
+        <div id="slide-habilidades">
+          <img
+            class="img-habilidades"
+            id="img-html5"
+            src="img/favicon.png"
+            alt=""
+          />
+
+          <img
+            class="img-habilidades"
+            id="img-css3"
+            src="img/favicon.png"
+            alt=""
+          />
+
+          <img
+            class="img-habilidades"
+            id="img-javascript"
+            src="img/favicon.png"
+            alt=""
+          />
+
+          <img
+            class="img-habilidades"
+            id="img-node"
+            src="img/favicon.png"
+            alt=""
+          />
+
+          <img
+            class="img-habilidades"
+            id="img-react"
+            src="img/favicon.png"
+            alt=""
+          />
+
+          <img
+            class="img-habilidades"
+            id="img-csharp"
+            src="img/favicon.png"
+            alt=""
+          />
+
+          <img
+            class="img-habilidades"
+            id="img-dotnet"
+            src="img/favicon.png"
+            alt=""
+          />
+
+          <img
+            class="img-habilidades"
+            id="img-unity"
+            src="img/favicon.png"
+            alt=""
+          />
+
+          <img
+            class="img-habilidades"
+            id="img-cplusplus"
+            src="img/favicon.png"
+            alt=""
+          />
+
+          <img
+            class="img-habilidades"
+            id="img-arduino"
+            src="img/favicon.png"
+            alt=""
+          />
+
+          <img
+            class="img-habilidades"
+            id="img-docker"
+            src="img/favicon.png"
+            alt=""
+          />
+
+          <img
+            class="img-habilidades"
+            id="img-mysql"
+            src="img/favicon.png"
+            alt=""
+          />
+
+          <img
+            class="img-habilidades"
+            id="img-python"
+            src="img/favicon.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section id="experiencias">
+        <h1>Experiências</h1>
+      </section>
+
+      <section id="carrosel-projetos">
         <h1 class="hagaum">MEUS PROJETOS</h1>
         <div class="owl-carousel owl-theme">
           <div class="item">
@@ -169,36 +277,31 @@
             </a>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section id="backgroud-formulario">
+        <h2>Vamos trabalhar juntos ?</h2>
+        <form id="formulario" action="" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" />
+
+          <label for="msg">Mensagem:</label>
+          <textarea id="msg"></textarea>
+          <input type="button" value="Enviar" />
+        </form>
+      </section>
     </main>
+
+    <footer>
+      Planejado e desenvolvido por Gerson Durães <br />Copyright ©
+    </footer>
 
     <button id="modoescuro" onclick="ativarnoturno()">
       <img id="imgmodoescuro" src="img/night.png" alt="modo escuro" />
     </button>
-
-    <section id="backgroud-formulario">
-      <h2>Vamos trabalhar juntos ?</h2>
-      <form id="formulario" action="" method="post">
-        <div>
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" />
-        </div>
-        <div>
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" />
-        </div>
-        <div>
-          <label for="msg">Mensagem:</label>
-          <textarea id="msg"></textarea>
-        </div>
-
-        <input type="button" value="Enviar" />
-      </form>
-    </section>
-
-    <footer id="rodape">
-      Planejado e desenvolvido por Gerson Durães <br />Copyright ©
-    </footer>
 
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
     <script src="js/owl/jquery.min.js"></script>
