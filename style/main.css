@@ -20,6 +20,8 @@
 
   --footer-sunny: #636363;
   --footer-moony: #162238;
+
+  --redesociais: #2a4372;
 }
 
 @font-face {
@@ -259,8 +261,8 @@ button > img {
 #backgroud-formulario {
   width: 100% !important;
   height: 450px;
-  margin: 20px 0px 0px !important;
-  background-color: var(--article-sunny);
+  margin: 0px !important;
+  background-image: linear-gradient( var(--redesociais), var(--article-moony)); 
 }
 
 #backgroud-formulario > h2 {
@@ -271,12 +273,6 @@ button > img {
   letter-spacing: 0.05em;
   padding: 20px;
   text-align: center;
-}
-
-#formulario {
-  display: flex;
-  text-align: justify;
-  justify-content: center;
 }
 
 #habilidades {
@@ -311,21 +307,35 @@ button > img {
   width: 95%;
   margin: auto;
   margin-bottom: 100px;
-  border-radius: 15px 15px 10px 10px;
+  border-radius: 15px;
   background-color: var(--article-sunny);
 }
 
 #redesociais{
-  text-align: center;
-  margin-bottom: 30px;
+  width: 100% !important;
+  margin-bottom: -1% !important;
+  background-color: var(--redesociais);
 }
 
-#redesociais > img{
-  border-radius: 15px 15px 10px 10px;
+#redesociais > h1{
+  font-family: Bofont, Verdana, Geneva, Tahoma, sans-serif;
+  padding: 30px;
+  padding-bottom: 0px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+#divredesociais{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#divredesociais > img{
+  border-radius: 15px;
 }
 
 footer {
-  background-color: var(--footer-sunny);
+  background-color: var(--article-moony);
   color: whitesmoke;
   text-align: center;
   font-family: Bofont, Verdana, Geneva, Tahoma, sans-serif;

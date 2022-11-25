@@ -16,8 +16,6 @@ var carrosel = document.getElementById("carrosel-projetos");
 
 var buttonnav = document.getElementsByClassName("effect");
 
-var footer = document.getElementById("rodape");
-
 var estado = false;
 
 function ativarnoturno() {
@@ -42,8 +40,6 @@ function ativarnoturno() {
     document.body.style.setProperty("--button-nav", "(var)--button-nav-moony");
 
     document.body.style.setProperty("--button-sobre", "var(--header-moony)");
-
-    rodape.style.backgroundColor = "var(--footer-moony)";
     
   } else {
 
@@ -67,7 +63,6 @@ function ativarnoturno() {
 
     document.body.style.setProperty("--button-sobre", "var(--header-sunny)");
 
-    rodape.style.backgroundColor = "var(--footer-sunny)";
   }
 
   estado = !estado;
