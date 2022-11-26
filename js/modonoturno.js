@@ -16,6 +16,12 @@ var carrosel = document.getElementById("carrosel-projetos");
 
 var buttonnav = document.getElementsByClassName("effect");
 
+var habilidades = document.getElementById('habilidades');
+
+var experiencia = document.getElementById('experiencias');
+
+var redessociais = document.getElementById('redesociais');
+
 var estado = false;
 
 function ativarnoturno() {
@@ -33,9 +39,15 @@ function ativarnoturno() {
 
     resumo.style.color = "whitesmoke";
 
+    habilidades.style.backgroundColor = "var(--article-moony)";
+
+    experiencia.style.backgroundColor = "var(--article-moony)";
+
     articlebackgroudcolor.style.backgroundColor = "var(--article-moony)";
 
     carrosel.style.backgroundColor = "var(--article-moony)";
+
+    redessociais.style.backgroundColor = "var(--article-moony)";
 
     document.body.style.setProperty("--button-nav", "(var)--button-nav-moony");
 
@@ -57,7 +69,13 @@ function ativarnoturno() {
 
     articlebackgroudcolor.style.backgroundColor = "var(--article-sunny)";
 
+    habilidades.style.backgroundColor = "var(--article-sunny)";
+
+    experiencia.style.backgroundColor = "var(--article-sunny)";
+
     carrosel.style.backgroundColor = "var(--article-sunny)";
+
+    redessociais.style.backgroundColor = "var(--article-sunny)";
 
     document.body.style.setProperty("--button-nav", "var(--button-nav-sunny)");
 

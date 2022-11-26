@@ -21,7 +21,7 @@
   --footer-sunny: #636363;
   --footer-moony: #162238;
 
-  --redesociais: #2a4372;
+  --redesociais: white;
 }
 
 @font-face {
@@ -72,6 +72,10 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+}
+
+hr{
+  max-width: 75%;
 }
 
 a {
@@ -191,22 +195,6 @@ article > h1 {
   padding-left: 10px;
 }
 
-#carrosel-projetos {
-  padding: 1px 1px 1px 1px;
-  background-color: var(--article-sunny);
-  padding: 0px 30px 10px;
-  margin: 0px 20px 30px;
-  border-radius: 15px 15px 10px 10px;
-}
-
-#carrosel-projetos > h1 {
-  margin: 0px 0px 30px;
-  padding: 30px 0px 0px;
-  font-family: Bofont, "Montserrat", sans-serif;
-  letter-spacing: -0.05em;
-  text-align: center;
-}
-
 .btn {
   appearance: none;
   background-color: transparent;
@@ -258,26 +246,9 @@ button > img {
   padding: 5px 4px 5px 0px;
 }
 
-#backgroud-formulario {
-  width: 100% !important;
-  height: 450px;
-  margin: 0px !important;
-  background-image: linear-gradient( var(--redesociais), var(--article-moony)); 
-}
-
-#backgroud-formulario > h2 {
-  font-family: Bofont, Verdana, Geneva, Tahoma, sans-serif;
-  color: var(--button-nav);
-  font-size: 2em;
-  word-spacing: 0.1em;
-  letter-spacing: 0.05em;
-  padding: 20px;
-  text-align: center;
-}
-
 #habilidades {
   border-radius: 15px 15px 10px 10px;
-  margin: 0px 100px 100px;
+  margin: 0px 20px 100px;
   background-color: var(--article-sunny);
 }
 
@@ -303,17 +274,30 @@ button > img {
 }
 
 #experiencias {
-  height: 300px;
-  width: 95%;
-  margin: auto;
-  margin-bottom: 100px;
+  margin: 0px 20px 100px;
   border-radius: 15px;
   background-color: var(--article-sunny);
 }
 
+#carrosel-projetos {
+  padding: 1px 1px 1px 1px;
+  background-color: var(--article-sunny);
+  padding: 0px 30px 10px;
+  margin: 0px 20px 100px;
+  border-radius: 15px 15px 10px 10px;
+}
+
+#carrosel-projetos > h1 {
+  margin: 0px 0px 30px;
+  padding: 30px 0px 0px;
+  font-family: Bofont, "Montserrat", sans-serif;
+  letter-spacing: -0.05em;
+  text-align: center;
+}
+
 #redesociais{
-  width: 100% !important;
-  margin-bottom: -1% !important;
+  margin: 0px 20px 100px;
+  border-radius: 15px 15px 10px 10px;
   background-color: var(--redesociais);
 }
 
@@ -322,7 +306,7 @@ button > img {
   padding: 30px;
   padding-bottom: 0px;
   text-align: center;
-  color: whitesmoke;
+  color: var(--color-h1-sunny);
 }
 
 #divredesociais{
@@ -334,6 +318,25 @@ button > img {
   border-radius: 15px;
 }
 
+
+#backgroud-formulario {
+  width: 100% !important;
+  height: 450px;
+  margin: 0px !important;
+  background-image: linear-gradient( white, var(--article-moony)96%) ; 
+}
+
+#backgroud-formulario > h2 {
+  font-family: Bofont, Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: white 3.5px 2.5px 1px;
+  color: #fcaf03;
+  font-size: 2em;
+  word-spacing: 0.1em;
+  letter-spacing: 0.2em;
+  padding: 20px;
+  text-align: center;
+}
+
 footer {
   background-color: var(--article-moony);
   color: whitesmoke;
@@ -343,10 +346,25 @@ footer {
   padding: 10px;
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1104px) {
   #sobremim {
     margin: 0px;
     margin-top: 100px;
+  }
+
+  #habilidades{
+    margin: 0px;
+    border-radius: 0px;
+  }
+
+  #experiencias{
+    margin: 0px;
+    border-radius: 0px;
+  }
+
+  #redesociais{
+    margin: 0px;
+    border-radius: 0px;
   }
 
   #carrosel-projetos {
@@ -356,21 +374,39 @@ footer {
 
   #background-color-article {
     background-color: var(--article-sunny);
-    min-width: 100%;
-    margin: 0;
-    margin-bottom: 50px;
+    margin: 0px;
     border-radius: 0px;
+    min-width: 100%;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1016px) {
   #sobremim {
-    margin-top: 200px;
+    margin-top: 170px;
+  }
+
+  #background-color-article {
+    background-color: var(--article-sunny);
+    margin: 0px;
+    border-radius: 0px;
+    min-width: 100%;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 824px) {
   #sobremim {
     margin-top: 250px;
+  }
+
+  #background-color-article {
+    background-color: var(--article-sunny);
+    min-width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 495px) {
+  #sobremim {
+    margin-top: 280px;
   }
 }
