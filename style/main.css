@@ -253,7 +253,7 @@ button > img {
 }
 
 #habilidades > h1,
-#experiencias > h1, #backgroud-formulario > h1 {
+#experiencias > h1, #backgroud-formulario > h1{
   font-family: Bofont, Verdana, Geneva, Tahoma, sans-serif;
   padding: 30px;
   padding-bottom: 0px;
@@ -268,9 +268,25 @@ button > img {
 }
 
 .img-habilidades {
+  cursor: pointer;
   max-width: 50px;
   max-height: 60px;
   margin: 0px 0px 20px 10px;
+}
+
+#textohabilidades {
+  text-align: center;
+  padding-bottom: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 10px;
+}
+
+#textohabilidades > h1{
+    font-family: Bofont, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7rem;
+    color: var(--button-nav-sunny);
+    margin: 10px;
+    margin-bottom: 5px;
 }
 
 #experiencias {
