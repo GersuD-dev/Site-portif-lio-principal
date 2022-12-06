@@ -1,2 +1,2 @@
 # Site-portif-lio-principal
-Site o resumo dos meus projetos
+Site do resumo dos meus projetos
